@@ -1,0 +1,99 @@
+﻿@model MVC_Library.Models.DTO.CreateBookDTO
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<div class="container mt-3 col-md-7 float-left">
+    <div class="card card-lightblue">
+        <div class="card-header">
+            <h3 class="card-title">Kitap Ekle</h3>
+        </div>
+        <!-- /.card-header -->
+        <!-- form start -->
+        <form action="/Book/Create" method="post" role="form">
+            <div class="card-body ">
+                <div class="row">
+                    <label for="Title" class=" col-form-label">Title</label>
+
+                    <input type="text" class="form-control" name="Title">
+
+                </div>
+                <div class="row">
+                    <label for="Content" class="c col-form-label">Content</label>
+
+                    <textarea type="text" class="form-control" row="6" name="Content"></textarea>
+
+
+                </div>
+                <div class="row">
+                    <label for="Genre" class=" col-form-label">Genre</label>
+
+                    <input type="text" class="form-control" name="Genre">
+
+
+                </div>
+
+                <div class="row">
+                    <label for="Image" class=" col-sm-12 col-form-label float-left">Image</label>
+
+                    <div class="input-group">
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="exampleInputFile">
+                            <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                        </div>
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="">Upload</span>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer">
+                    <div class="container">
+                        <div class="row">
+
+                            <button type="submit" class="btn btn-primary col-sm-1">Kaydet</button>
+                            &nbsp;&nbsp;&nbsp;
+                            <button type="submit" class="btn btn-warning col-sm-1">İptal</button>&nbsp;&nbsp;&nbsp;
+                            <a href="/User/List" class="btn btn-secondary col-sm-2">Listeye Dön</a><br />
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.card-footer -->
+
+</form>
+    </div>
+</div>
+
+<div class="container mt-3 col-md-5 float-left">
+    <div class="card card-lightblue">
+        <div class="card-header">
+            <h3 class="card-title">Kitap Fotoğrafı</h3>
+        </div>
+        <!-- /.card-header -->
+
+
+
+
+        </div>
+        <!-- form start -->
+ 
+            <div class="form-group">
+
+                <img src="~/Content/img/WhatsApp Image 2021-05-11 at 22.40.53.jpeg" class="rounded mx-auto d-block w-auto h-auto" alt="...">
+
+            </div>
+            <!-- /.card-body -->
+            <!-- /.card-footer -->
+
+        </form>
+    </div>
+</div>
+
+

@@ -1,0 +1,328 @@
+﻿<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Tepe İsg Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+          crossorigin="anonymous" />
+    <!-- Font Awesome Icons -->
+    <link href="~/Content/css/all.css" rel="stylesheet" />
+    @*<link href="~/Content/css/fontawesome.min.css" rel="stylesheet" />*@
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+    <!-- Theme style -->
+    <link href="~/Content/css/adminlte.min.css" rel="stylesheet" />
+
+</head>
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+            <div class="container-fluid">
+                <div class="row">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               data-widget="pushmenu"
+                               href="#"
+                               role="button">
+                                <i class="fas fa-bars"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <ul class="navbar-nav">
+                        <li>
+                            <a href="https://www.facebook.com/TepeISG/?ref=aymt_homepage_panel"
+                               class="col-sm-1">
+                                <i class="fab fa-facebook-f" style="color: #a9abad"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/tepeisg" class="col-sm-1">
+                                <i class="fab fa-twitter" style="color: #a9abad"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/tepeisg/" class="col-sm-1">
+                                <i class="fab fa-instagram" style="color: #a9abad"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="login.html" class="col-sm-1">
+                                <i class="fas fa-sign-out-alt" style="color: #a9abad"> Çıkış</i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- /.navbar -->
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="https://www.tepeisg.com.tr/" class="brand-link">
+                <img src="~/Content/img/WhatsApp Image 2021-05-11 at 22.40.53.jpeg"
+                     alt="Tepe İsg Logo"
+                     class="brand-image img-circle elevation-3"
+                     style="opacity: 1" />
+                <span class="brand-text font-weight-light"><strong>Tepe İsg Portal</strong></span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="image">
+                        <img src="~/Content/img/Sıfat Resmi.jpeg"
+                             class="img-circle elevation-2"
+                             alt="User Image" />
+                    </div>
+                    <div class="info">
+                        <a href="#" class="d-block">Sabahettin Taşır</a>
+                    </div>
+                </div>
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column"
+                        data-widget="treeview"
+                        role="menu"
+                        data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+                         with font-awesome or any other icon font library -->
+                        <!--ana sayfa-->
+                        <li class="nav-item has-treeview menu-open">
+                            <a href="starter.html" class="nav-link active">
+                                <i class="nav-icon fas fa-home"></i>
+                                <p>Ana Sayfa</p>
+                            </a>
+                        </li>
+                        <!-- ./ana sayfa-->
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link active">
+                                <i class="nav-icon fas fa-user-friends"></i>
+                                <p>
+                                    İnsan Kaynakları
+                                    <i class="right fas fa-angle-right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fas fa-umbrella-beach nav-icon"></i>
+                                        <p>Yıllık İzin Talebi</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fas fa-lightbulb nav-icon"></i>
+                                        <p>Bir Fikrim Var!</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--mali ve idari işler-->
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link active">
+                                <i class="nav-icon fas fa-lira-sign"></i>
+                                <p>
+                                    Mali ve İdari İşler
+                                    <i class="right fas fa-angle-right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fas fa-wallet nav-icon"></i>
+                                        <p>Harcama Bildirimi</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- ./mali ve idari işler-->
+                        <!--Kalite-->
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link active">
+                                <i class="nav-icon fas fa-feather-alt"></i>
+                                <p>
+                                    Kalite
+                                    <i class="right fas fa-angle-right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fab fa-wpforms nav-icon"></i>
+                                        <p>Formlar</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- ./Kalite-->
+                        <!--Eğitim ve Muayene Raporu-->
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link active">
+                                <i class="nav-icon fas fa-chalkboard-teacher"></i>
+                                <p>
+                                    Raporlar
+                                    <i class="right fas fa-angle-right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fas fa-check nav-icon"></i>
+                                        <p>Eğitim Raporu</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fas fa-user-md nav-icon"></i>
+                                        <p>Muayene Raporu</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- ./Eğitim ve Muayene Raporu-->
+                        <!--araç rezervasyon-->
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link active">
+                                <i class="nav-icon fas fa-car"></i>
+                                <p>
+                                    Araç Rezervasyon
+                                    <i class="right fas fa-angle-right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fas fa-list nav-icon"></i>
+                                        <p>Rezervasyon Yap</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fas fa-list-alt nav-icon"></i>
+                                        <p>Rezervasyon Listesi</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- ./araç rezervasyon-->
+                        <!--Profil-->
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link active">
+                                <i class="nav-icon fas fa-cogs"></i>
+                                <p>
+                                    Kullanıcı Ayarları
+                                    <i class="right fas fa-angle-right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="/User/Create" class="nav-link">
+                                        <i class="fas fa-user-cog nav-icon"></i>
+                                        <p>Kullanıcı Oluştur</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/User/List" class="nav-link">
+                                        <i class="fas fa-user-cog nav-icon"></i>
+                                        <p>Kullanıcı Listele</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- sayfa içeriği -->
+        <div class="content-wrapper">
+            @RenderBody()
+        </div>
+        <!-- /.sayfa içeriği -->
+        <!-- /.content-wrapper -->
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+            <div class="p-3">
+                <h5>Title</h5>
+                <p>Sidebar content</p>
+            </div>
+        </aside>
+        <!-- /.control-sidebar -->
+        <!-- Main Footer -->
+        <footer class="main-footer">
+            <!-- To the right -->
+            <div class="float-right d-none d-sm-inline">
+                <script id="tarihvesaat" type="text/javascript">
+                    saatkacTT_iDate = 1;
+                    saatkacTT_country = "TR";
+                    saatkacTT_region = "";
+                    saatkacTT_fontColor = "#a9abad";
+                    saatkacTT_fontType = "normal 18px arial";
+                </script>
+                <script type="text/javascript"
+                        src="http://www.saatkac.com/dateTimeText.js"></script>
+            </div>
+            <!-- Default to the left -->
+
+            <strong>
+                Tescilli Marka &copy; 2013-2021
+                <a href="https://www.tepeisg.com.tr/">Tepe İş Sağlığı ve Güvenliği Hizmetleri A.Ş.</a>
+            </strong>Her hakkı saklıdır.
+        </footer>
+    </div>
+    <!-- ./wrapper -->
+    <!-- REQUIRED SCRIPTS -->
+    <!-- jQuery -->
+    <script src="~/Content/js/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="~/Content/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="~/Content/js/adminlte.min.js"></script>
+
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.9.1.js" integrity="sha256-e9gNBsAcA0DBuRWbm0oZfbiCyhjLrI6bmqAl5o+ZjUA=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(window).load(function () {
+            $(document).ready(function () {
+                var interval = setInterval(function () {
+                    var momentNow = moment();
+                    $("#tarih-bolumu").html(momentNow.format("DD.MM.YYYY"));
+                    $("#saat-bolumu").html(momentNow.format("hh:mm:ss"));
+                }, 100);
+            });
+        });
+    </script>
+
+    <script src="~/Content/js/fontawesome.min.js"></script>
+    <script src="~/Content/js/fontawesome.js"></script>
+    <script src="~/Content/js/table.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+</body>
+</html>
+
