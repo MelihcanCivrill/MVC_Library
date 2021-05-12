@@ -113,6 +113,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DTO\CreateBookDTO.cs" />
+    <Compile Include="Models\DTO\UpdateBookDTO.cs" />
     <Compile Include="Models\ORM\Context\ApplicationDbContext.cs" />
     <Compile Include="Models\ORM\Entities\Abstract\BaseEntity.cs" />
     <Compile Include="Models\ORM\Entities\Concrete\Book.cs" />
@@ -123,6 +124,8 @@
     <None Include="packages.config" />
     <Content Include="Views\Shared\_LayoutPage.cshtml" />
     <Content Include="Views\Book\Create.cshtml" />
+    <Content Include="Views\Book\List.cshtml" />
+    <Content Include="Views\Book\Update.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,6 +1,6 @@
-﻿@model MVC_Library.Models.DTO.CreateBookDTO
+﻿@model MVC_Library.Models.DTO.UpdateBookDTO
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Update";
     Layout = "~/Views/Shared/_LayoutPage.cshtml";
 }
 
@@ -11,25 +11,26 @@
         </div>
         <!-- /.card-headerasdasdasdadada -->
         <!-- form start -->
-        <form action="/Book/Create" method="post" role="form">
+        <form action="/Book/Update" method="post" role="form">
+            <input type="text" style="visibility:hidden" name="Id" value="@Model.Id" />
             <div class="card-body ">
                 <div class="row">
                     <label for="Title" class=" col-form-label">Title</label>
 
-                    <input type="text" class="form-control" name="Title">
+                    <input type="text" class="form-control" name="Title" value="@Model.Title">
 
                 </div>
                 <div class="row">
                     <label for="Content" class="c col-form-label">Content</label>
 
-                    <textarea type="text" class="form-control" row="6" name="Content"></textarea>
+                    <textarea type="text" class="form-control" row="6" name="Content" value=>@Model.Content</textarea>
 
 
                 </div>
                 <div class="row">
                     <label for="Genre" class=" col-form-label">Genre</label>
 
-                    <input type="text" class="form-control" name="Genre">
+                    <input type="text" class="form-control" name="Genre" value="@Model.Genre">
 
 
                 </div>
@@ -39,7 +40,7 @@
                     <div class="input-group">
                         <div class="custom-file">
                             <input type="file" class="custom-file-input" id="exampleInputFile">
-                            <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                            <label class="custom-file-label" for="exampleInputFile">@Model.ImageUrl</label>
                         </div>
                         <div class="input-group-append">
                             <span class="input-group-text" id="">Upload</span>
@@ -52,6 +53,7 @@
                         <div class="row">
 
                             <button type="submit" class="btn btn-primary col-sm-2">Kaydet</button>
+
                             &nbsp;&nbsp;&nbsp;
                             <button type="submit" class="btn btn-warning col-sm-2">İptal</button>&nbsp;&nbsp;&nbsp;
                             <a href="/Book/List" class="btn btn-secondary col-sm-2">Listeye Dön</a><br />
@@ -86,5 +88,4 @@
     <!-- /.card-footer -->
 
 </div>
-
 
